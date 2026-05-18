@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="para">Hello para</p>
+
+    <img id="image" src="" alt="">
+
+    <ul id="unorderedList">
+        <li></li>
+        
+    </ul>
+    <a  href=""></a>
+
+
+    <h2 class="heading">Hello h2 1</h2>
+    <h2 class="heading">Hello H2 2</h2>
+    <h3 class="heading">Hello H2 3</h3>
+
+    <button>Click</button>
+    
+
+    <script>
+
+        // document --> bridge between html and javascript
+
+        // let paragraph = document.getElementById("para")
+
+        // let UL = document.getElementById("unorderedList")
+
+        // console.log(paragraph)
+        // console.log(UL)
+
+        let allHeading = document.getElementsByClassName("heading")
+
+        console.log(allHeading)
+
+
+        //modern js mein use hone wala method
+        // querySelector ----> id (#),class (.),tag (simple tag name)
+
+       let abc =  document.querySelector(".heading")
+       console.log(abc)
+
+
+    let def = document.querySelectorAll(".heading");
+    console.log(def)
+
+
+
+    let para = document.getElementById("para")
+
+    //.innerHtml
+    //.innerText
+    //.textContent
+
+    // para.innerHTML = "<h1>Hello Students.....</h1>"
+
+
+    // para.innerText = `Hello 
+    
+    
+    // Students 
+    
+    
+    
+    // krmu....`
+
+    // para.textContent  = `Hello 
+    
+    
+    // Text 
+    
+    
+    // Content`
+    
+
+
+
+
+    </script>
+
+
+</body>
+
+
+
+
+</html>
+
+<!-- 
+<div>  //start
+
+
+
+</div> //end -->
+
+
+<!-- <input type="text" name="" id="">
+<img src="" alt="">
+<meta> -->

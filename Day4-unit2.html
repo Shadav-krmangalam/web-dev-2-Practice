@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+// let arr = [1,2,3,4,5,6,7,8,9]
+
+
+// console.log("hello") 
+
+// setTimeout(() => {
+//     console.log("hey")
+// }, 2000); //Async Function 
+
+// console.log("world")
+
+
+
+
+// setTimeout(() => {
+//     alert("Timeout is running")
+// }, 3000);
+
+
+// let inter = setInterval(()=>{
+
+//     console.log("Hello interval")
+
+// },2000)
+
+
+//   clearInterval(inter)
+
+// setTimeout(()=>{
+ 
+  
+
+// },10000)
+
+
+// //callback
+//   function A(B){
+//     B();
+
+//   }
+
+//   function B(){
+//     console.log("hello Callback")
+//   }
+
+
+// A(B)
+
+ 
+
+
+// //callback
+// function alex(){
+
+//     console.log("alex hun")
+
+// }
+
+
+// //higher order function
+// function joy(alex,victor){
+
+//     alex();
+//     victor()
+
+// }
+
+// //callback
+// function victor(){
+//     console.log("victor Hun")
+
+// }
+
+// joy(alex,victor);
+
+
+
+
+//Asyncronocity :-> to handle the functions in a sequential manner even if they will take time...
+
+// console.log("Start Cooking...")
+
+
+// function boilWater(lagbatak){
+//     console.log("Boiling Water...") 
+//     setTimeout(()=>{
+//         console.log("water Boiled..")
+//         lagbatak()
+
+//     },7000)     
+// }
+
+
+// function AddMaggie(callback){
+//     console.log("Adding Maggie...")
+//     setTimeout(()=>{
+//         console.log("Maggie Added")
+//         callback()
+
+//     },7000)
+// }
+
+// function addMasala(callback){
+//     console.log("Adding Masala...")
+//     setTimeout(()=>{
+//         console.log("Masala Added")
+//         callback();
+
+//     },7000)
+// }
+
+
+// function serve(){
+//     console.log("Serve and Eat")
+// }
+
+
+// //call back hell
+// boilWater(()=>{
+//     AddMaggie(()=>{
+//         addMasala(()=>{
+//             serve()
+//         })
+//     })
+// })
+
+
+
+//promises...resolve,pending,reject
+
+let flag = false;
+let age = 18
+
+let promise = new Promise((resolve,reject)=>{
+   
+    if(age>=18){
+        resolve("Pura hua wada....")
+    }else{
+        reject("Kya hua tera wada...")
+    }
+})
+
+// console.log(promise)
+
+// .then ->  handles resolve part
+// .catch  -> handles reject part
+
+
+promise.then((result)=>{
+    console.log("result : ",result)
+}).catch((error)=>{
+    // console.log("error : ",error)
+    alert(error)
+})
+
+
+
+
+
+
+    
+
+      
+
+
+
+
+
+       
+    </script>
+</body>
+</html>

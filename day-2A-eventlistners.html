@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click</button>
+
+    <input type="text" name="" id="">
+    
+    <script>
+        let btn = document.querySelector("button")
+        let inp = document.querySelector("input")
+
+
+        // function alertFunction(e){
+           
+        //     alert("Hello students")
+        // }
+
+        // btn.addEventListener("click",alertFunction)
+
+
+
+        function keyboard(e){
+            console.log(e.key)
+        }
+
+        inp.addEventListener("keydown",keyboard)
+        
+
+    </script>
+</body>
+</html>

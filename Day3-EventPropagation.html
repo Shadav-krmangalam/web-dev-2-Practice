@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <div style="background-color: red; width: 300px; height: 200px;" id="outer">
+       
+        <div style="background-color: rgb(9, 152, 54); width: 150px; height: 100px;" id="middle">
+           
+            <button id="inner">inner</button>
+        </div>
+    </div>
+
+    <script>
+        let outerBox = document.getElementById("outer")
+        let middleBox = document.getElementById("middle")
+        let innerBox = document.getElementById("inner")
+
+        function outerFunction(){
+            alert("Outer Div")
+        }
+  
+           function middleFunction(){
+            alert("Middle Div")
+        }
+
+        function innerFunction(){
+            alert("Inner Div")
+        }
+
+        outerBox.addEventListener("click",outerFunction,true)      
+        middleBox.addEventListener("click",middleFunction,true)    
+        innerBox.addEventListener("click",innerFunction,true)
+
+
+
+        var a = 5;
+
+        function addition(num){
+            var res = num+num;
+            return res;
+        }
+
+        let answer1 = addition(a); //10
+        const answer2 = addition(20); //40
+
+
+
+
+        console.log(b)
+
+
+
+        var b = 10;
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
