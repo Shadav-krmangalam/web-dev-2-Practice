@@ -53,7 +53,8 @@ function handleReset(){
 
 return (
     <>
-    <Child1 count={count} name={name}/>
+    {/* <Child1 count={count} name={name}/> */}
+    <h1>Count : {count}</h1>
     <button onClick={handleIncrement}>Increment</button>
 
     {/* {count>1 ? <button onClick={handleDecrement}>Decrement</button> :<span>All ready kam hai</span>} */}

@@ -9,61 +9,65 @@
     
     <script>
 
-        //ordering food from swiggy
+        // ordering food from swiggy
+
+//Promise chaining
+        //step 1
+        function selectFood(){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+
+                    resolve("Food Selected")
+
+                },5000)
+
+            })
+        }
 
 
-        // //step 1
-        // function selectFood(){
-        //     return new Promise((resolve,reject)=>{
-        //         setTimeout(()=>{
+        //step 2
 
-        //             resolve("Food Selected")
+        function makePayment(){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                      reject("Payment failed")
+                },5000) 
 
-        //         },5000)
-
-        //     })
-        // }
-
-
-        // //step 2
-
-        // function makePayment(){
-        //     return new Promise((resolve,reject)=>{
-        //         setTimeout(()=>{
-        //               reject("Payment failed")
-        //         },5000) 
-
-        //     })
-        // }
+            })
+        }
 
 
-        // //step 3
-        // function orderPlaced(){
-        //     return new Promise((resolve,reject)=>{
+        //step 3
+        function orderPlaced(){
+            return new Promise((resolve,reject)=>{
 
-        //         setTimeout(()=>{
-        //             resolve("Your order has been placed")
-        //         },3000)
-        //     })
-        // }
+                setTimeout(()=>{
+                    resolve("Your order has been placed")
+                },3000)
+            })
+        }
 
 
-        // selectFood().then((result)=>{
-        //     console.log(result)
+        //promise chaining
+        selectFood().then((result)=>{
+            console.log(result)
 
-        //     return makePayment();
-        // }).then((result)=>{
+            return makePayment();
+        }).then((result)=>{
 
-        //     console.log(result)
-        //     return orderPlaced()
+            console.log(result)
+            return orderPlaced()
 
-        // }).then((result)=>{
-        //     console.log(result)
-        // }).catch((error)=>{
-        //     console.log(error)
-        // }).finally(()=>{
-        //     console.log("Kuch bhi hojaye mein to chalunga hiii")
-        // })
+        }).then((result)=>{
+            console.log(result)
+        }).catch((error)=>{
+            console.log(error)
+        }).finally(()=>{
+            console.log("Kuch bhi hojaye mein to chalunga hiii")
+        })
+
+
+
 
 
         //async /await
